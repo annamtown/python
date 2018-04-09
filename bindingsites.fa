@@ -1,0 +1,24 @@
+>aceBAK (glyoxylate shunt enzymes) 235->251
+cgttaagcgattcagc
+>edd-eda (2 enzymes of Entner-Douderoff pathway) 97->113
+actgaaacgtttttgc
+>fruBMHKA-1 (enzymes involved in fructose PTS) 86->102
+cttgaaacgtttcagc
+>fruBMHKA-2 (enzymes involved in fructose PTS) 19->35
+gctgaatcgtttcaat
+>icd (isocitrate dehydrogenase) 231->247
+gctgaatcgcttaacc
+>gapB (2nd putative glyceraldehyde 3 phosphate dehydrogenase)
+actgaaacgcttcagc
+>mtlA (mannitol-specific PTS enzymes) 108->124
+actgaatcggttaact
+>pckA (PEP carboxykinase) 271->287
+ggtgaatcgatacttt
+>pfkA 106->122
+gctgaattgattcagg
+>ppsA (PEP synthase) 86->102
+ggtgaatcgttcaagc
+>ptsHI (Hpr and enz I of the PTS) 204->220
+gctgaatcgattttat
+>pykF (pyruvate kinase isoenzyme) 206->222
+gctgaaaccattcaag
