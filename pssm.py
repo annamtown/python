@@ -1,10 +1,6 @@
 #this is a sh and python script for creating:
-# - Frequency or probability matrix
-# - PSSM
-# - Scores for all motif sequences in the input alignment
-# - List of all positions in the analyzed sequence with score less than or equal to zero
-#       - For each motif occurrence, list position (start-end), actual sequence, and score
-
+# - Frequency matrix
+# - Position-specific scoring matrix
 
 # download reference genome and unzip reference genome
 #wget -q -O ref.fa.gz ftp://ftp.ensemblgenomes.org/pub/bacteria/release-37/fasta/bacteria_0_collection/escherichia_coli_str_k_12_substr_mg1655/dna/Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.dna.chromosome.Chromosome.fa.gz
