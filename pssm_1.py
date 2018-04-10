@@ -2,12 +2,6 @@
 # - Frequency matrix
 # - Position-specific scoring matrix
 
-# download reference genome and unzip reference genome
-#wget -q -O ref.fa.gz ftp://ftp.ensemblgenomes.org/pub/bacteria/release-37/fasta/bacteria_0_collection/escherichia_coli_str_k_12_substr_mg1655/dna/Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.dna.chromosome.Chromosome.fa.gz
-
-#unzip reference genome
-#gunzip -c ref.fa.gz > ref.fa
-
 # import division function for calc background probabilities
 from __future__ import division
 
@@ -15,7 +9,7 @@ from __future__ import division
 import math
 
 # calc background probabilities
-reference=open('/Users/tennisluver/Documents/GitHub/python/sampleref.fa')
+reference=open('/Users/tennisluver/Desktop/Escherichia_coli_str_k_12_substr_mg1655.ASM584v2.dna.chromosome.Chromosome.fa')
 refstr=''
 for line in reference:
     if line[0]!='>':
@@ -37,7 +31,7 @@ propg=g/total
 print propa, propt, propc, propg
 
 #open alignment file
-alignment=open('/Users/tennisluver/Documents/GitHub/python/sample.fa')
+alignment=open('/Users/tennisluver/Desktop/fruB.txt')
 text=[]
 #for the alignment file, do not read lines containing >sequence name
 # line=line.strip() removes "\n" from the end of the line (python formatting)
@@ -86,7 +80,6 @@ for row in fmatrix:
     t=len(T_list)
     c=len(C_list)
     g=len(G_list)
-
 # add small number to remove zeros from fmatrix
     f2matrix.append([a+0.25, t+0.25, c+0.25, g+0.25])
 # calculate probability matrix
