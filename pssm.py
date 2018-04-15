@@ -87,7 +87,7 @@ for row in fmatrix:
     c=len(C_list)
     g=len(G_list)
 
-# add small number to remove zeros from fmatrix
+# add pseudocount to remove zeros from fmatrix
     f2matrix.append([a+0.25, t+0.25, c+0.25, g+0.25])
 # calculate probability matrix
     pmatrix.append([(a+0.25)/13, (t+0.25)/13, (c+0.25)/13, (g+0.25)/13])

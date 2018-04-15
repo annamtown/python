@@ -1,4 +1,4 @@
-#this is a sh and python script for creating:
+#this is a python script for creating:
 # - Frequency matrix
 # - Position-specific scoring matrix
 
