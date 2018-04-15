@@ -42,7 +42,7 @@ for line in alignment:
 
 # alignment matrix
 # "x" is treated as a character for A, T, C, and G
-r = 10 #because there are 10 sequences
+r = # #number of sequences in alignment
 m = []
 for i in range(r):
     m.append([x for x in text[i]])
@@ -60,7 +60,7 @@ def column(matrix, i):
 # frequency matrix
 # for each column, count the number of NTs
 fmatrix=[]
-r = 12 #because there are 12 NTs per sequence
+r = # #number of NTs per sequence
 for i in range(r):
     a=column(m,i)
     fmatrix.append(a)
@@ -81,13 +81,14 @@ for row in fmatrix:
     c=len(C_list)
     g=len(G_list)
 
+# replace #NTs with the number of nucleotides per sequence in the alignment
 # add pseudocount to remove zeros from fmatrix
     f2matrix.append([a+0.25, t+0.25, c+0.25, g+0.25])
 # calculate probability matrix
-    pmatrix.append([(a+0.25)/13, (t+0.25)/13, (c+0.25)/13, (g+0.25)/13])
+    pmatrix.append([(a+0.25)/#NTs, (t+0.25)/#NTs, (c+0.25)/#NTs, (g+0.25)/#NTs])
 # create PSSM using log2(p/q)
 # p2matrix = PSSM
-    p2matrix.append([math.log(((a+0.25)/13)/propa,2), math.log(((t+0.25)/13)/propt,2), math.log(((c+0.25)/13)/propc,2), math.log(((t+0.25)/13)/propt,2)])
+    p2matrix.append([math.log(((a+0.25)/#NTs)/propa,2), math.log(((t+0.25)/#NTs)/propt,2), math.log(((c+0.25)/#NTs)/propc,2), math.log(((t+0.25)/#NTs)/propt,2)])
 print (f2matrix)
 print (pmatrix)
 print (p2matrix)
